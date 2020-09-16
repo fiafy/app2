@@ -30,6 +30,6 @@ export class StudentPage {
   logout() {
     this.storage.clear();
 
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
   }
 }

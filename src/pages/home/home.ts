@@ -27,7 +27,7 @@ export class HomePage {
 
   login(username, password) {
     var url =
-      "http://10.44.8.87/Wkapp/login.php?username=" +
+      "http://172.20.10.5/Wkapp/login.php?username=" +
       username +
       "&password=" +
       password;
@@ -42,9 +42,9 @@ export class HomePage {
       console.log(data.id);
       console.log(data);
       if (data.id != null && data.type == "teacher") {
-        this.navCtrl.push(TeachermenuPage);
+        this.navCtrl.setRoot(TeachermenuPage);
       } else if (data.id != null && data.type == "student") {
-        this.navCtrl.push(StudentPage);
+        this.navCtrl.setRoot(StudentPage);
       } else {
         alert("เกิดข้อผิดพลาดในการเข้าสู่ระบบ");
       }

@@ -1,3 +1,4 @@
+import { UpdatenewsPageModule } from "./../pages/updatenews/updatenews.module";
 import { BrowserModule } from "@angular/platform-browser";
 import { ErrorHandler, NgModule } from "@angular/core";
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
@@ -8,13 +9,21 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { MyApp } from "./app.component";
 import { HomePage } from "../pages/home/home";
+import { InformationPage } from "./../pages/information/information";
+import { PublicizePage } from "./../pages/publicize/publicize";
+import { AddpublicizePage } from "./../pages/addpublicize/addpublicize";
+import { NewsreleasePage } from "./../pages/newsrelease/newsrelease";
 import { StudentPage } from "./../pages/student/student";
 import { TeachermenuPage } from "./../pages/teachermenu/teachermenu";
+import { StudyplanPage } from "./../pages/studyplan/studyplan";
+
+//----------
+import { UpdatenewsPage } from "./../pages/updatenews/updatenews";
 
 //-------
+import { IndexPage } from "./../pages/index/index";
 import { ContactPage } from "../pages/contact/contact";
 import { SearchPage } from "../pages/search/search";
-import { ListPage } from "../pages/list/list";
 import { TabsPage } from "../pages/tabs/tabs";
 //-------
 
@@ -22,11 +31,17 @@ import { TabsPage } from "../pages/tabs/tabs";
   declarations: [
     MyApp,
     HomePage,
+    InformationPage,
+    PublicizePage,
+    AddpublicizePage,
+    NewsreleasePage,
     StudentPage,
     TeachermenuPage,
+    StudyplanPage,
+    UpdatenewsPage,
+    IndexPage,
     ContactPage,
     SearchPage,
-    ListPage,
     TabsPage,
   ],
   imports: [
@@ -39,11 +54,17 @@ import { TabsPage } from "../pages/tabs/tabs";
   entryComponents: [
     MyApp,
     HomePage,
+    InformationPage,
+    PublicizePage,
+    AddpublicizePage,
+    NewsreleasePage,
     StudentPage,
     TeachermenuPage,
+    StudyplanPage,
+    UpdatenewsPage,
+    IndexPage,
     ContactPage,
     SearchPage,
-    ListPage,
     TabsPage,
   ],
   providers: [

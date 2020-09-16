@@ -2,6 +2,8 @@ import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
 import { Storage } from "@ionic/storage";
 import { HomePage } from "../home/home";
+import { InformationPage } from "../information/information";
+import { PublicizePage } from "../publicize/publicize";
 
 /**
  * Generated class for the TeachermenuPage page.
@@ -26,9 +28,17 @@ export class TeachermenuPage {
     console.log("ionViewDidLoad TeachermenuPage");
   }
 
+  Information() {
+    this.navCtrl.push(InformationPage);
+  }
+
+  Publicize() {
+    this.navCtrl.push(PublicizePage);
+  }
+
   logout() {
     this.storage.clear();
 
-    this.navCtrl.push(HomePage);
+    this.navCtrl.setRoot(HomePage);
   }
 }

@@ -10,4 +10,27 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding> </ion-content>
+<ion-content padding>
+  <ion-list>
+    <ion-item id="menuteacher" (click)="viewKarnrean()">
+      <ion-thumbnail item-start>
+        <img src="http://localhost/image/news.png" />
+      </ion-thumbnail>
+      <h2>ข่าวประชาสัมพันธ์</h2>
+    </ion-item>
+
+    <ion-item id="menuteacher" (click)="viewKarnrean()">
+      <ion-thumbnail item-start>
+        <img src="http://localhost/image/class.png" />
+      </ion-thumbnail>
+      <h2>ข่าวกิจกรรม</h2>
+    </ion-item>
+
+    <ion-item id="menuteacher" (click)="Checkstudy()">
+      <ion-thumbnail item-start>
+        <img src="http://localhost/image/calendar.png" />
+      </ion-thumbnail>
+      <h2>ปฎิทินวิชาการ</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
