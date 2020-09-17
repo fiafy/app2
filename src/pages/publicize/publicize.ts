@@ -44,7 +44,7 @@ export class PublicizePage {
   }
 
   LoadNews() {
-    let url = "http://172.20.10.5/Wkapp/get_News.php";
+    let url = "http://10.44.8.55/Wkapp/get_News.php";
     this.http.get(url).subscribe(
       (data: any) => {
         this.rowsNews = data.rowsNews;
@@ -57,7 +57,7 @@ export class PublicizePage {
   }
 
   deletedata(id: number) {
-    var url = "http://172.20.10.5/Wkapp/deletedata_news.php?id=" + id;
+    var url = "http://10.44.8.55/Wkapp/deletedata_news.php?id=" + id;
 
     this.data = this.http.get(url);
 

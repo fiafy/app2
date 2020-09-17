@@ -48,26 +48,20 @@ export class UpdatenewsPage {
   }
   //////////////////
   Update(id, head_news, description, date) {
-    // ไว้สำหรับเพิ่มข้อมูลเข้า Database
-    let jsonData = {
-      id: id,
-      head_news: head_news,
-      description: description,
-      date: date,
-    };
-    let url = "http://172.20.10.5/Wkapp/update_news.php";
-
     let postdataset = new FormData();
 
-    postdataset.append("id", this.id.toString());
+    /* postdataset.append("id", this.id.toString()); */
     postdataset.append("head_news", this.head_news);
     postdataset.append("description", this.description);
     postdataset.append("date", this.date);
 
-    console.log(jsonData);
+    let url = "http://10.44.8.55/Wkapp/update_news.php?id=" + id;
 
     this.http.post(url, postdataset).subscribe((data: any) => {
+      console.log(postdataset);
+
       alert("แก้ไขเรียบร้อย");
+
       this.navCtrl.push(PublicizePage);
       // console.log(data); */
     });

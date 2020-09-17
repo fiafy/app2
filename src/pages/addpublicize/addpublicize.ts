@@ -34,7 +34,7 @@ export class AddpublicizePage {
       date: date,
     }; //สร้าง obj
     console.log(jsonData);
-    let url = "http://172.20.10.5/Wkapp/add_news.php"; //ให้ไป post ที่  url
+    let url = "http://10.44.8.55/Wkapp/add_news.php"; //ให้ไป post ที่  url
     this.http.post(url, jsonData).subscribe((data: any) => {
       alert("บันทึกประกาศเรียบร้อย");
       this.navCtrl.push(PublicizePage);

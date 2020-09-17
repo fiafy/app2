@@ -27,7 +27,7 @@ export class HomePage {
 
   login(username, password) {
     var url =
-      "http://172.20.10.5/Wkapp/login.php?username=" +
+      "http://10.44.8.55/Wkapp/login.php?username=" +
       username +
       "&password=" +
       password;
